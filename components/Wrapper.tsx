@@ -14,7 +14,9 @@ const Wrapper: FC<IWrapperProps> = (props) => {
 			}}
 			className='p-4 bg-bg-secondary'
 		>
-			{children}
+			<div className="max-w-6xl mx-auto">
+				{children}
+			</div>
 		</div>
 	);
 };
