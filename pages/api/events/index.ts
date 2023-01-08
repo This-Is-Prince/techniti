@@ -44,7 +44,7 @@ export const events: IEvent[] = [
 		docExt: 'pdf',
 		id: 'robo-war-proposal',
 		imgExt: 'jpg',
-		prize: '75000',
+		prize: '30000',
 		title: 'Robo War'
 	},
 	{
@@ -52,8 +52,16 @@ export const events: IEvent[] = [
 		docExt: 'pdf',
 		id: 'integration-bee',
 		imgExt: 'jfif',
-		prize: '75000',
+		prize: '4500',
 		title: 'Integration Bee'
+	},
+	{
+		description: '',
+		docExt: 'pdf',
+		id: 'bridge-it',
+		imgExt: 'jfif',
+		prize: '4500',
+		title: 'Bridge It'
 	}
 ];
 

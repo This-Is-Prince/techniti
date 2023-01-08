@@ -62,7 +62,7 @@ const EventInfo: FC<IEventInfoProps> = () => {
 								: null
 						}
 					</div>
-					<div className="col-span-2 flex items-center justify-end">
+					<div className="col-span-2 flex justify-center items-end flex-col gap-y-5">
 						<button
 							onClick={() => {
 								const anchorElm = document.createElement('a');
@@ -75,8 +75,13 @@ const EventInfo: FC<IEventInfoProps> = () => {
 							}}
 							className='px-5 py-3 bg-primary rounded-lg font-bold shadow-2xl hover:bg-white hover:text-primary'
 						>
-						Download Rules and regulation
+							Download Rules and regulation
 						</button>
+						{
+							id !=='hackmol' ? <p className='text-red-500 font-bold text-xl max-w-[275px] text-center'>
+									⭐ Registration form will soon be opened
+							</p>: null
+						}
 					</div>
 				</section>: null
 			}

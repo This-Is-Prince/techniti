@@ -16,10 +16,10 @@ const Event: FC<IEventProps> = (props) => {
 	return (
 		<Link
 			href={`/events/${id}`}
-			className='rounded-md bg-bg-main text-white max-w-xs p-4 block w-[320px] h-[190px]'
+			className='rounded-md bg-bg-main text-white max-w-xs p-4 block col-span-1'
 		>
 			<article
-				className='flex flex-col gap-y-2'
+				className='flex flex-col gap-y-2 w-[320px] h-[190px] justify-between'
 			>
 				<h2 className='font-bold'>{title}</h2>
 				<div className='max-w-[288px] max-h-[95px] overflow-hidden'>

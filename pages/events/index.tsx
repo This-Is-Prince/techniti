@@ -23,7 +23,7 @@ interface IEventsProps {
 const Events: FC<IEventsProps> = (props) => {
 	const events = props.events;
 	return (
-		<section className='flex items-center gap-5'>
+		<section className='grid grid-cols-3 gap-5'>
 			{events.map((event) => {
 				return <Event key={event.id} {...event} />;
 			})}
