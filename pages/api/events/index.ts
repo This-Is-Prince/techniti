@@ -46,6 +46,14 @@ export const events: IEvent[] = [
 		imgExt: 'jpg',
 		prize: '75000',
 		title: 'Robo War'
+	},
+	{
+		description: 'The Integration Bee is a traditional playoff-style event that has gained popularity in US colleges and universities, and more and more institutions are incorporating it into their schedules of student activities. Additionally, many students who are interested in mathematics look forward to social mathematics events like these. In a knockout playoff format, several teams of two players will compete in this event. In each round, two teams will go head-to-head solving integrals. This event is inspired by the annual Integration Bee held at MIT and various other institutes across the globe.',
+		docExt: 'pdf',
+		id: 'integration-bee',
+		imgExt: 'jfif',
+		prize: '75000',
+		title: 'Integration Bee'
 	}
 ];
 
