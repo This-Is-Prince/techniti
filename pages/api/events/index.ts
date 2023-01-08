@@ -4,6 +4,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 export interface IEvent {
+	ext: string;
     prize: string;
     title: string;
     id: string;
@@ -12,7 +13,8 @@ export interface IEvent {
 
 export const events: IEvent[] = [
 	{
-		id: '1',
+		ext: 'docx',
+		id: 'hackmol',
 		prize: '75000',
 		problemStatements: [
 			'Innovative Approaches for Green Technology,',

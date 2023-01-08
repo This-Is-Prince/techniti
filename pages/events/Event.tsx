@@ -11,10 +11,11 @@ interface IEventProps extends IEvent {
 
 }
 
-const Event: FC<IEventProps> = () => {
+const Event: FC<IEventProps> = (props) => {
+	const { id } = props;
 	return (
 		<Link
-			href={'/events/1'}
+			href={`/events/${id}`}
 			className='rounded-md bg-bg-main text-white max-w-xs p-4 block'
 		>
 			<article

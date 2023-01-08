@@ -7,6 +7,7 @@ import React, { FC } from 'react';
 import Event from './Event';
 
 export interface IEvent {
+	ext: string;
     prize: string;
     title: string;
     id: string;
