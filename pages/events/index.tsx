@@ -7,7 +7,9 @@ import React, { FC } from 'react';
 import Event from './Event';
 
 export interface IEvent {
-	ext: string;
+	docExt: string;
+	description?: string;
+	imgExt: string;
     prize: string;
     title: string;
     id: string;
@@ -21,7 +23,7 @@ interface IEventsProps {
 const Events: FC<IEventsProps> = (props) => {
 	const events = props.events;
 	return (
-		<section>
+		<section className='flex items-center gap-5'>
 			{events.map((event) => {
 				return <Event key={event.id} {...event} />;
 			})}

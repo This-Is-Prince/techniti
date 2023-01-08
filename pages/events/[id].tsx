@@ -28,28 +28,46 @@ const EventInfo: FC<IEventInfoProps> = () => {
 				event? <section className='text-white grid grid-cols-5'>
 					<div className='col-span-3'>
 						<h1 className='text-primary font-bold text-5xl'>{event?.title}</h1>
-						<h4 className='my-5 text-xl'>Problem Statements</h4>
-						<article
-							className='flex flex-col text-text_secondary gap-y-2 text-sm'
-						>
-							{event?.problemStatements.map((problemStatement, index) => {
-								return (
-									<div key={problemStatement} className='flex items-center gap-x-2'>
-										<span>{index + 1}. </span>
-										<p >
-											{problemStatement}
-										</p>
-									</div>
-								);
-							})}
-						</article>
+						{
+							event?.problemStatements && event?.problemStatements.length > 0?
+								<>
+									<h4 className='my-5 text-xl'>Problem Statements</h4>
+									<article
+										className='flex flex-col text-text_secondary gap-y-2 text-sm'
+									>
+										{event?.problemStatements.map((problemStatement, index) => {
+											return (
+												<div key={problemStatement} className='flex items-center gap-x-2'>
+													<span>{index + 1}. </span>
+													<p >
+														{problemStatement}
+													</p>
+												</div>
+											);
+										})}
+									</article>
+								</>
+								: null
+						}
+						{
+							event?.description?
+								<>
+									<h4 className='my-5 text-xl'>Description</h4>
+									<article
+										className='flex flex-col text-text_secondary gap-y-2 text-sm'
+									>
+										{event?.description}
+									</article>
+								</>
+								: null
+						}
 					</div>
 					<div className="col-span-2 flex items-center justify-end">
 						<button
 							onClick={() => {
 								const anchorElm = document.createElement('a');
 								if (anchorElm) {
-									anchorElm.href = `/rules/${id}.${event?.ext}`;
+									anchorElm.href = `/rules/${id}.${event?.docExt}`;
 									document.body.appendChild(anchorElm);
 									anchorElm.click();
 									document.body.removeChild(anchorElm);

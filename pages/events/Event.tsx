@@ -12,18 +12,20 @@ interface IEventProps extends IEvent {
 }
 
 const Event: FC<IEventProps> = (props) => {
-	const { id } = props;
+	const { id, prize, title, imgExt } = props;
 	return (
 		<Link
 			href={`/events/${id}`}
-			className='rounded-md bg-bg-main text-white max-w-xs p-4 block'
+			className='rounded-md bg-bg-main text-white max-w-xs p-4 block w-[320px] h-[190px]'
 		>
 			<article
 				className='flex flex-col gap-y-2'
 			>
-				<h2 className='font-bold'>Hackmol 4.0</h2>
-				<Image width={500} height={500} src='/hackmol.jpg' alt='hack mol image' />
-				<p className='text-sm font-serif'>INR 75000+ prize</p>
+				<h2 className='font-bold'>{title}</h2>
+				<div className='max-w-[288px] max-h-[95px] overflow-hidden'>
+					<Image width={500} height={500} className='object-center' src={`/${id}.${imgExt}`} alt={`${title} Image`} />
+				</div>
+				<p className='text-sm font-serif'>INR {prize}+ prize</p>
 			</article>
 		</Link>
 	);
