@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-image: url('../public/hero.png');
+    background-size: cover;
+    background-color: #24272E;
+    background-blend-mode: overlay;
+}

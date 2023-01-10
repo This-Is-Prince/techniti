@@ -63,20 +63,24 @@ const EventInfo: FC<IEventInfoProps> = () => {
 						}
 					</div>
 					<div className="col-span-2 flex justify-center items-end flex-col gap-y-5">
-						<button
-							onClick={() => {
-								const anchorElm = document.createElement('a');
-								if (anchorElm) {
-									anchorElm.href = `/rules/${id}.${event?.docExt}`;
-									document.body.appendChild(anchorElm);
-									anchorElm.click();
-									document.body.removeChild(anchorElm);
-								}
-							}}
-							className='px-5 py-3 bg-primary rounded-lg font-bold shadow-2xl hover:bg-white hover:text-primary'
-						>
-							Download Rules and regulation
-						</button>
+						{
+							event?.docExt?
+								<button
+									onClick={() => {
+										const anchorElm = document.createElement('a');
+										if (anchorElm) {
+											anchorElm.href = `/rules/${id}.${event?.docExt}`;
+											document.body.appendChild(anchorElm);
+											anchorElm.click();
+											document.body.removeChild(anchorElm);
+										}
+									}}
+									className='px-5 py-3 bg-primary rounded-lg font-bold shadow-2xl hover:bg-white hover:text-primary'
+								>
+									Download Rules and regulation
+								</button>
+								: null
+						}
 						{
 							id !=='hackmol' ? <p className='text-red-500 font-bold text-xl max-w-[275px] text-center'>
 									⭐ Registration form will soon be opened

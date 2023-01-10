@@ -7,9 +7,9 @@ import React from 'react';
 const Footer = () => {
 	return (
 		<footer
-			className='px-4 bg-bg-main h-[75px]'
+			className='px-4 bg-bg-main bg-opacity-90 h-[50px]'
 		>
-			<div className="max-w-6xl mx-auto flex items-center gap-x-10 h-full">
+			<div className="max-w-6xl mx-auto flex items-center gap-x-10 h-full justify-center">
 				<nav
 					className='text-primary flex items-center gap-x-5'
 				>

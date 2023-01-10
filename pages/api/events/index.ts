@@ -62,6 +62,22 @@ export const events: IEvent[] = [
 		imgExt: 'jfif',
 		prize: '4500',
 		title: 'Bridge It'
+	},
+	{
+		description: 'Its 2050 the apocalypse is near, rescue missions on roll. How many can we save? The need of drones to pick up man or material from collapsing buildings and has risen. It’s now or never. Build a base for the upcoming future by fabricating drone that could hold the humans will to survive. A mini drone which could carry the weight of a payload and deliver it safely while avoiding certain obstacles.',
+		docExt: 'pdf',
+		id: 'drone-show',
+		imgExt: 'jfif',
+		prize: '30000',
+		title: 'Drone Show'
+	},
+	{
+		description: 'In this competition a team of 4 has to create a color sensing robot which will be placed on an arena with different colored Tracks , the bot will be provided with a colored prop and the task is to follow that coloured line and place the prop at its final location. The arena consists of a starting point where different colored cube shaped props will be provided to bot and there is a black colored line which splits into 4 different colored lines and reach their respective final points. So there are many different props available to bot which the bot will take one by one and follow the respected color line and drop the prop at its final destination and come back to initial point . Points will be awarded according to no. of props placed correctly in 5 minutes.',
+		docExt: '',
+		id: 'lumen-trace',
+		imgExt: 'jpeg',
+		prize: '30000',
+		title: 'Lumen Trace'
 	}
 ];
 

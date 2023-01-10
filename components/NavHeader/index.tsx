@@ -8,7 +8,7 @@ import React from 'react';
 const NavHeader = () => {
 	return (
 		<header
-			className='px-4 bg-bg-main shadow-md'
+			className='px-4 bg-bg-main bg-opacity-90 shadow-md'
 		>
 			<div className="max-w-6xl mx-auto flex items-center gap-x-10">
 				<div>

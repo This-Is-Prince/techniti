@@ -10,9 +10,9 @@ const Wrapper: FC<IWrapperProps> = (props) => {
 	return (
 		<div
 			style={{
-				minHeight: 'calc(100vh - 150px)'
+				minHeight: 'calc(100vh - 125px)'
 			}}
-			className='p-4 bg-bg-secondary'
+			className='p-4 bg-bg-secondary bg-opacity-25'
 		>
 			<div className="max-w-6xl mx-auto">
 				{children}
