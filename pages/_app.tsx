@@ -15,6 +15,9 @@ export default function App({ Component, pageProps }: AppProps) {
 			<Wrapper>
 				<Component {...pageProps} />
 			</Wrapper>
+			<video autoPlay loop muted className='w-screen h-screen -z-10 inset-0 scale-150 absolute' >
+				<source src='/tech.mp4' />
+			</video>
 			<Footer />
 		</>
 	);
