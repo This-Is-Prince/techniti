@@ -12,6 +12,9 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<video autoPlay loop muted className='w-screen h-screen -z-10 inset-0 absolute' >
+				<source src='/tech.mp4' />
+			</video>
 			<div
 				className='flex flex-col items-center justify-center'
 			>
