@@ -14,6 +14,7 @@ export interface IEvent {
     title: string;
     id: string;
     problemStatements: string[];
+	url?: string;
 }
 
 interface IEventsProps {

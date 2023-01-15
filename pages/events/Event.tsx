@@ -12,10 +12,10 @@ interface IEventProps extends IEvent {
 }
 
 const Event: FC<IEventProps> = (props) => {
-	const { id, prize, title, imgExt } = props;
+	const { id, prize, title, imgExt, url } = props;
 	return (
 		<Link
-			href={`/events/${id}`}
+			href={url? url: `/events/${id}`}
 			className='rounded-md bg-bg-main text-white max-w-xs p-4 block col-span-1'
 		>
 			<article

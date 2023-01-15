@@ -11,6 +11,7 @@ export interface IEvent {
     title: string;
     id: string;
 	problemStatements?: string[];
+	url?: string;
 }
 
 export const events: IEvent[] = [
@@ -37,7 +38,8 @@ export const events: IEvent[] = [
 			'sustainable energy management,',
 			'smart and sustainable supply chain and other related problems.'
 		],
-		title: 'Hackmol 4.0'
+		title: 'Hackmol 4.0',
+		url: 'http://hackmol.tech/'
 	},
 	{
 		description: 'It will be a savage, Clash of Metals with the alloys grinding red hot. It is a game of style, control, damage and aggression with the robot pits against each other in a deadly combat. It is time to concentrate on the slashing of the bots. Get ready to feel the chills and shivers down your spine and become a part of Rob wars................. So Design and Construct a remote controlled bot with adequate weapon systems capable of fighting a one on one tournament.',
