@@ -16,6 +16,7 @@ const Event: FC<IEventProps> = (props) => {
 	return (
 		<Link
 			href={url? url: `/events/${id}`}
+			target={url? '_blank': '_self'}
 			className='rounded-md bg-bg-main text-white max-w-xs p-4 block col-span-1'
 		>
 			<article
